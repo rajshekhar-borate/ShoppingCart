@@ -1,0 +1,25 @@
+<h2><b>Order Details</b></h2>
+
+<table class="responstable">
+  
+  <tr>
+    <th scope="col">Username</th>
+    <th scope="col">ProductName</th>
+    <th scope="col">Price</th>
+    <th scope="col">Quantity</th>
+    <th scope="col">TotalPrice</th>
+    <th scope="col">address</th>
+    
+  </tr>
+  
+  <tr *ngFor="let order of orders">
+    <th scope="row">{{order.username}}</th>
+    <td>{{order.productName}}</td>
+    <td>{{order.price}}</td>
+    <td>{{order.quantity}}</td>
+    <td>{{order.totalPrice}}</td>
+    <td>{{order.address}}</td>
+    
+  </tr>
+  
+</table>

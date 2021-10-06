@@ -1,0 +1,13 @@
+<div class="container">
+    <form id="contactus" action="" method="post" (ngSubmit)="submit()">
+        <h3>Place Order</h3>
+        <fieldset> <input type="text" class="form-control" id="productId"  placeholder="username" name="username" [(ngModel)]="order.username"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="productName"  placeholder="productName" name="productName" [(ngModel)]="order.productName"> </fieldset>
+        <fieldset> <input type="number" class="form-control" id="price"  placeholder="price" name="price" [(ngModel)]="order.price"></fieldset>
+        <fieldset> <input type="number" class="form-control" id="quantity"  placeholder="quantity" name="quantity" [(ngModel)]="order.quantity"> </fieldset>
+        <fieldset>  <input type="number" class="form-control" id="totalPrice"  placeholder="totalPrice" name="totalPrice" [(ngModel)]="order.totalPrice"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="address"  placeholder="Shippng address" name="address" [(ngModel)]="order.address"> </fieldset>
+       
+        <fieldset> <button (click)="checkout(order.totalPrice)" name="submit" type="submit" id="contactus-submit" data-submit="...Sending">Place Order & Make Payment</button> </fieldset>
+    </form>
+</div>

@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <!--  Show this only on mobile to medium screens  -->
+    <a class="navbar-brand d-lg-none" href="#"> <h3>EshoppingZone</h3></a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  <!--  Use flexbox utility classes to change how the child elements are justified  -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+  
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="productlist">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="adminlogin">Admin</a>
+        </li>
+        <li>
+        <button routerLink="cart" >
+          <i style="font-size: 25px;" class="fas fa-cart-plus"></i>
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+      </li>
+      </ul>
+      
+      
+  <!--   Show this only lg screens and up   -->
+      <a class="navbar-brand d-none d-lg-block" href="#"> <h3>EshoppingZone</h3></a>
+      
+      
+      
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="register">Register</a>
+        </li>
+       
+        
+      </ul>
+      
+    </div>
+  </nav>
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h3>EshoppingZone</h3>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="productlist">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="Admin">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="SignUp">SignUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="SignIn">SignIn</a>
+        </li>
+      
+       </ul>
+       <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+-->

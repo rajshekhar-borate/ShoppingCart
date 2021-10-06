@@ -1,0 +1,72 @@
+<div class="container">
+    <form id="contactus" action="" method="post" (ngSubmit)="submit()">
+        <h3>Update Product</h3>
+        <fieldset> <input type="text" class="form-control" id="productId"  placeholder="Enter productId" name="productId" [(ngModel)]="product.productId"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="productType"  placeholder="Enter productType" name="productType" [(ngModel)]="product.productType"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="productName"  placeholder="Enter productName" name="productName" [(ngModel)]="product.productName"></fieldset>
+        <fieldset> <input type="text" class="form-control" id="category"  placeholder="Enter category" name="category" [(ngModel)]="product.category"> </fieldset>
+        <fieldset>  <input type="number" class="form-control" id="price"  placeholder="Enter price" name="price" [(ngModel)]="product.price"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="description"  placeholder="Enter description" name="description" [(ngModel)]="product.description"> </fieldset>
+        <fieldset> <input type="text" class="form-control" id="image"  placeholder="Enter image" name="image" [(ngModel)]="product.image"></fieldset>
+        <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending">Update Product</button> </fieldset>
+    </form>
+</div>
+<!--
+<form (ngSubmit)="submit()">
+    
+    <div class="row">
+        <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <h2>Update Product</h2>
+
+                   <div class="form-group">
+                        <label for="productId">productId</label>
+                        <input type="text" class="form-control" id="productId"  placeholder="Enter productId" name="productId" [(ngModel)]="product.productId">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productType">productType</label>
+                        <input type="text" class="form-control" id="productType"  placeholder="Enter productType" name="productType" [(ngModel)]="product.productType">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productName">productName</label>
+                        <input type="text" class="form-control" id="productName"  placeholder="Enter productName" name="productName" [(ngModel)]="product.productName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">category</label>
+                        <input type="text" class="form-control" id="category"  placeholder="Enter category" name="category" [(ngModel)]="product.category">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">price</label>
+                        <input type="number" class="form-control" id="price"  placeholder="Enter price" name="price" [(ngModel)]="product.price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">description</label>
+                        <input type="text" class="form-control" id="description"  placeholder="Enter description" name="description" [(ngModel)]="product.description">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="image">image</label>
+                        <input type="text" class="form-control" id="image"  placeholder="Enter image" name="image" [(ngModel)]="product.image">
+                    </div>
+
+                    
+
+                 
+               
+                  <button type="submit" class="btn btn-primary">Update</button>
+                 </div>
+             <div class="col-md-3">
+
+             </div>
+        
+    </div>
+    
+</form>
+
+-->

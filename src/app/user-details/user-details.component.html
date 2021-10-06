@@ -1,0 +1,20 @@
+<h2><b>User Details</b></h2>
+
+<table class="responstable">
+  
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">UserName</th>
+    
+  </tr>
+  
+  <tr *ngFor="let user of users">
+       
+    <td>{{user.id}}</td>
+    <td>{{user.username}}</td>
+    
+    
+  </tr>
+  
+</table>
+
